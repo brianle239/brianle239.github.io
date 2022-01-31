@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(177, 216, 252);
+}
+
+h1 {
+    font-size: 5em;
+}
+
+#profile_pic {
+    height: 200px;
+    width: 200px;
+    border: solid rgb(240, 201, 29);
+}
+
+.image_link {
+    height: 100px;
+    width: 100px;
+}
