@@ -1,7 +1,5 @@
 
 
-
-
 body {
     
     margin: 0px;
@@ -11,6 +9,7 @@ body {
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-size: cover;
+    width: 100vw;
     
     background-color: rgb(230,230,250, .1);
 
@@ -18,6 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
 
 
 }
@@ -25,8 +26,8 @@ body {
 
 body > div {
     background-color: rgb(244, 244, 255);
-    width: 100px;
-    margin: 10px;
+    width: 100vw;
+    margin: 0;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
@@ -172,11 +173,12 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%); */
     /* background-color: aliceblue; */
-    margin: 10%;
-    margin-bottom: 25%;
+    margin: 6%;
+   
     padding: 0;
-    width: 600px;
-    height: 150px;
+    width: 700px;
+    height: 50%;
+    margin-bottom: 0;
     
 
     
@@ -187,6 +189,7 @@ ul li {
     list-style: none;
     position:relative;
     
+    
     /* position: absolute; */
     width: 200px;
     height: 200px;
@@ -194,29 +197,36 @@ ul li {
     transform: rotate(45deg);
     transition: .5s;
     color: white;
+    font-size: 200%;
+    font-weight: 100;
+
+  
+    
     
 
 }
 
 ul li.it1 {
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
 
 }
 
 ul li.it2 {
-    bottom: 45%;
-    left: 25%;
+    bottom: 77.5px;
+    
+    left: 22.5%;
 }
 
 ul li.it3 {
-    bottom: 288.5%;
+    bottom: 462.5px;
 
-    left: 50%;
+    left: 45%;
 }
 ul li.it4 {
-    bottom: 335%;
-    left: 75%;
+    bottom: 542.5px;
+    left: 67.5%;
+    margin-bottom: -60%;
 }
 
 ul li.it1 .bg {
@@ -239,5 +249,31 @@ ul li:hover .overlay1{
 
 
 .overlay1{
+    font-size: 50%;
+    position: relative;
     opacity: 0;
+    
+    transform: 45deg;
+    text-align: center;
+    text-indent: -16%;
+    transition: .5 ease;
+    
 }
+
+
+
+.text_project_title {
+    padding-left: 10%;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.text_project_text{
+    
+    padding-left: 15%;
+    text-align: left;
+    line-height: 1;
+    
+}
+
