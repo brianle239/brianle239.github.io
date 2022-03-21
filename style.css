@@ -193,7 +193,8 @@ ul {
     /* margin-top: 6%; */
     padding: 0;
     width: 700px;
-    height: 100vh;
+    height: 550px;
+    display: block;
     
 
 }
@@ -223,16 +224,16 @@ ul li.it1 {
 }
 
 ul li.it2 {
-    bottom: 25.5%;
+    bottom: 27%;
     left: 22.5%;  
 }
 
 ul li.it3 {
-    bottom: 105.5%;
+    bottom: 111%;
     left: 45%;
 }
 ul li.it4 {
-    bottom: 131%;
+    bottom: 138%;
     left: 67.5%;
     margin-bottom: -60%;
 }
