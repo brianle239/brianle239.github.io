@@ -6,6 +6,7 @@ class Koala extends Component {
   constructor(props) {
     super(props);
 
+    // Bind mouse events
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
   }
@@ -17,7 +18,6 @@ class Koala extends Component {
   handleMouseOver() {
     this.setState({
       isLight: true,
-
       
     });
   }
@@ -31,8 +31,7 @@ class Koala extends Component {
 
   render () {
     return (
-    
-    
+  
       // <img class="koala_svg" src="src\assets\koala2.svg"></img>
       // <svg width="100" height="100">
       <svg viewBox="-250 -250 800 800">
