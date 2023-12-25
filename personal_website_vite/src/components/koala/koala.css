@@ -8,3 +8,8 @@
 .cls-2 {
     fill: #262b4d;
 }
+
+svg {
+    height: 40em;
+    width: 40em;
+}
