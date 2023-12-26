@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga');
 .title {
     display: flex;
     margin: 0 auto;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100svw;
+    height: 80svh;
+    padding-left: 8svw;
+    text-align: left;
+    font-family: 'Calistoga';
+    color: rgba(255, 255, 247, 1);
+    line-height: 0;
 }
 
 .flex-item1 {
@@ -13,11 +19,58 @@
 
 .flex-item2 {
     flex: 1;
-    text-align: center;
+    text-align: left;
+    margin-top: -5svh;
+    margin-left: -20svw;
 }
 
 h1 {
+    font-size: 18svh;
     margin: auto;
-    width: 50%;
+    width: 100%;
     padding: 10px;
+    padding: 0;
+}
+
+h2 {
+    font-size: 6svh;
+    padding: 0;
+    margin-top: 20svh;
+    line-height: 0;
+}
+
+h3 {
+    font-size: 4.5svh;
+    padding: 0;
+    line-height: 0;
+    color: orange;
+}
+
+.icons {
+    display: flex;
+    padding-top: 5svh;
+}
+
+.icons>div {
+    margin-right: 4svw;
+    padding: 1svh;
+    position: relative;
+}
+
+.icons>div:hover {
+    background-color: #0e0638;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+img {
+    height: 10svh;
+    width: 10svh;
+}
+
+.img_caption {
+    margin-top: 3svh;
+    font-size: 2svh;
+    text-align: center;
+    color: orange;
 }

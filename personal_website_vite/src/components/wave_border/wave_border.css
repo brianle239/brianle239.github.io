@@ -1,0 +1,15 @@
+.spacer {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("src/assets/layered-waves-haikei.svg");
+}
+
+
+/* .layer2 {
+    background-image: url("src/assets/layered-waves-haikei_top.svg");
+} */

@@ -5,6 +5,7 @@ import './App.css'
 import Koala from './components/koala/koala.jsx'
 import Glitch from './components/glitch/glitch.jsx'
 import Page1 from './components/page1/page1.jsx'
+import Wave_border from './components/wave_border/wave_border.jsx'
 // import 'src\components\koala\koala.jsx'
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
       </p> */}
       
       <Page1 />
+ 
+     
     </div>
     
   )
