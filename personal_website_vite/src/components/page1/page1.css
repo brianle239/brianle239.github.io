@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Calistoga');
+.main_page {
+    background-image: url('src/assets/constelation.svg');
+    width: 100%;
+    aspect-ratio: 4/2;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 .title {
     display: flex;
     margin: 0 auto;
@@ -52,7 +61,7 @@ h3 {
 }
 
 .icons>div {
-    margin-right: 4svw;
+    margin-right: 3svw;
     padding: 1svh;
     position: relative;
 }
@@ -61,6 +70,11 @@ h3 {
     background-color: #0e0638;
     border-radius: 15px;
     transition: 1s;
+}
+
+.icons>div:hover .img_caption {
+    transition: 2.5s;
+    color: orange;
 }
 
 img {
@@ -72,5 +86,10 @@ img {
     margin-top: 3svh;
     font-size: 2svh;
     text-align: center;
-    color: orange;
+    color: transparent;
+}
+
+.border {
+    position: absolute;
+    bottom: 0;
 }

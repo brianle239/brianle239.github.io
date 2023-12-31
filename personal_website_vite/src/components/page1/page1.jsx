@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import './page1.css'
 import Koala from "../koala/koala.jsx";
-import Wave_border from "../wave_border/wave_border.jsx";
+import Wave_border from "../wave_borders/wave_border/wave_border.jsx";
 
 class Page1 extends Component {
   constructor(props) {
     super(props);
-
-    
   }
 
   
@@ -15,7 +13,7 @@ class Page1 extends Component {
 
   render () {
     return (
-        <div>
+        <div className="main_page">
         <div className="title">
             <div className="flex-item1">
                 <h2>Greetings,</h2>
@@ -51,7 +49,10 @@ class Page1 extends Component {
             
             
         </div>
-        <Wave_border />
+        <div className="border">
+          <Wave_border />
+        </div>
+          
         </div>
     
     );

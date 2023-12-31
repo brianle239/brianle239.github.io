@@ -1,0 +1,26 @@
+.page2 {
+    height: 80svh;
+    background-image: linear-gradient(#6600FF, #271FB3);
+    display: flex;
+}
+
+.profImage {
+    flex: 1;
+    margin: 0;
+}
+
+.selfImage {
+    background-image: url("src/assets/profile_picture_crop.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 75%;
+    background-position: center;
+    margin-top: 6.25%;
+    margin-left: 25%;
+    border-radius: 2%;
+    transition: 3s;
+}
+
+.aboutMeText {
+    flex: 1;
+}

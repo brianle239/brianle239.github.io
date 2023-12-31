@@ -2,10 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Koala from './components/koala/koala.jsx'
-import Glitch from './components/glitch/glitch.jsx'
+
 import Page1 from './components/page1/page1.jsx'
-import Wave_border from './components/wave_border/wave_border.jsx'
+
+import Page2 from './components/page2/page2.jsx'
+import Page3 from './components/page3/page3.jsx'
 // import 'src\components\koala\koala.jsx'
 
 function App() {
@@ -36,7 +37,8 @@ function App() {
       </p> */}
       
       <Page1 />
- 
+      <Page2 />
+      <Page3 />
      
     </div>
     

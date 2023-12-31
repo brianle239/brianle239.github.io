@@ -1,0 +1,16 @@
+.page3 {
+    height: 100svh;
+    background-image: url('src/assets/northrop_grumman_sensor-transformed.jpeg');
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.border {
+    position: absolute;
+    bottom: 0svh;
+    left: 0;
+    right: 0;
+}
