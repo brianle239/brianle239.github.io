@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga');
 .page2 {
     height: 80svh;
     background-image: linear-gradient(#6600FF, #271FB3);
@@ -7,6 +8,7 @@
 .profImage {
     flex: 1;
     margin: 0;
+    transition: 3s;
 }
 
 .selfImage {
@@ -18,9 +20,20 @@
     margin-top: 6.25%;
     margin-left: 25%;
     border-radius: 2%;
-    transition: 3s;
+    transition: 1s;
 }
 
 .aboutMeText {
     flex: 1;
+    color: white;
+    font-family: 'Calistoga';
+    font-size: larger;
+}
+
+.secret {
+    color: orange;
+}
+
+.secret:hover {
+    color: rgb(255, 217, 148);
 }
