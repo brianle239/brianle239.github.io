@@ -19,17 +19,18 @@ class Page2 extends Component {
   changeProf() {
     
     if (!this.isTransitioning) {
+      console.log("checl");
       this.isTransitioning = true;
-      if (this.state.isClicked) {
+      if (!this.state.isClicked) {
         this.setState({
-          isClicked: false,
+          isClicked: true,
           currentImage: 'src/assets/shirokuma.jpg'
           
         });
       }
       else {
         this.setState({
-          isClicked: true,
+          isClicked: false,
           currentImage: 'src/assets/profile_picture_crop.jpg',
           
         });
@@ -39,6 +40,7 @@ class Page2 extends Component {
       }, 2010); // Adjust timeout to match transition duration
       
     }
+    console.log("Clciked");
     // this.isTransitioning = false;
     
   }
@@ -49,21 +51,27 @@ class Page2 extends Component {
         <>
             <div className="page2">
               <div className="profImage">
+                <div className="imageBackground">
+
+                </div>  
                 <img className="selfImage" style={{ backgroundImage: `url(${this.state.currentImage})`, transition: "2s" }}>
-                    
+                  
                 </img>
+                
               </div>
               <div className="aboutMeText">
-                  Aspiring software developer/engineer in Los Angeles 
+                  Aspiring software developer/engineer in <p style={{color:"orange", display:"inline"}}>Los Angeles, CA</p> with 1 year of 
+                  professional experience at Northrop Grumman
                   <br />
                   <br />
 
-                  Computer Science undergraduate at University of California, Irvine 
-                  with an expected graduation date of June 2025. ZOT ZOT ZOT!!!
+                  Computer Science undergraduate at <p style={{color:"orange", display:"inline"}}>University of California, Irvine </p> 
+                  with an expected graduation date of <p style={{color:"orange", display:"inline"}}>June 2025</p>. ZOT ZOT ZOT!!!
                   <br />
                   <br />
 
-                  You can probably find me at any of UCI's hackathons :D
+                  You can probably find me in study lounges with my friends grinding DSA prbolems or
+                  at any of UCI's hackathons :D
                   <br />
                   <br />
 
@@ -73,7 +81,7 @@ class Page2 extends Component {
                   <br />
                   <br />
                   <div className="secret" onClick={this.changeProf}>
-                    [How my friends sees me as]
+                    [How my friends sees me]
                   </div>
                   
                   

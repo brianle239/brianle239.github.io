@@ -9,9 +9,11 @@
     flex: 1;
     margin: 0;
     transition: 3s;
+    position: relative;
 }
 
 .selfImage {
+    position: absolute;
     background-image: url("src/assets/profile_picture_crop.jpg");
     background-size: cover;
     width: 50%;
@@ -23,11 +25,34 @@
     transition: 1s;
 }
 
+.imageBackground {
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    margin-top: 6.25%;
+    margin-left: 25%;
+    background-image: linear-gradient(#271FB3, #6600FF);
+    border-radius: 2%;
+    animation: loadIn 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadIn {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(-4%, -4%);
+    }
+}
+
 .aboutMeText {
     flex: 1;
     color: white;
     font-family: 'Calistoga';
     font-size: larger;
+    padding-top: 6svh;
+    padding-right: 10svh;
 }
 
 .secret {
