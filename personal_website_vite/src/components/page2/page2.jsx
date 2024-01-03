@@ -19,7 +19,6 @@ class Page2 extends Component {
   changeProf() {
     
     if (!this.isTransitioning) {
-      console.log("checl");
       this.isTransitioning = true;
       if (!this.state.isClicked) {
         this.setState({
@@ -40,7 +39,6 @@ class Page2 extends Component {
       }, 2010); // Adjust timeout to match transition duration
       
     }
-    console.log("Clciked");
     // this.isTransitioning = false;
     
   }
@@ -88,7 +86,18 @@ class Page2 extends Component {
               </div>
                  
             </div>
-            
+            <div className="techStack">
+              <div className="techIntro">
+                My Tech Stack
+              </div>
+              <div className="techIconList">
+              <div className="techIcon">
+                Hello
+              </div>
+              </div>
+              
+
+            </div>
         </>
     
     );

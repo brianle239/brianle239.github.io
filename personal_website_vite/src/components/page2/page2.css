@@ -62,3 +62,18 @@
 .secret:hover {
     color: rgb(255, 217, 148);
 }
+
+.techStack {
+    font-family: 'Calistoga';
+}
+
+.techIntro {
+    text-align: center;
+    color: white;
+    font-size: 6svh;
+}
+
+.techIconList {
+    display: flex;
+    background-color: aliceblue;
+}
