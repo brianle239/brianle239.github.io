@@ -18,8 +18,7 @@ class Page1 extends Component {
             <div className="flex-item1">
                 <h2>Greetings,</h2>
                 <h1>Brian Le</h1>
-                <h3>[ Student + Developer + Koala Lover ]</h3>
-                
+                <div className="test">[ Student + Developer + Koala Lover ]</div>
                 <div className="icons">
                   <div id = "Resume" target="_blank">
                     <a href="https://brianle239.github.io/resume_git.pdf">
@@ -49,6 +48,7 @@ class Page1 extends Component {
             
             
         </div>
+        
         <div className="border">
           <Wave_border />
         </div>

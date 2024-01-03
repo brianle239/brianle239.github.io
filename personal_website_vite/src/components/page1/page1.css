@@ -18,7 +18,7 @@
     text-align: left;
     font-family: 'Calistoga';
     color: rgba(255, 255, 247, 1);
-    line-height: 0;
+    line-height: normal;
 }
 
 .flex-item1 {
@@ -39,20 +39,33 @@ h1 {
     width: 100%;
     padding: 10px;
     padding: 0;
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    /* background-color: beige; */
 }
 
 h2 {
     font-size: 6svh;
     padding: 0;
     margin-top: 20svh;
-    line-height: 0;
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    /* background-color: aliceblue; */
+    min-height: 10px;
+    /* Custom font height issue with "g" */
+    /* height: 8svh; */
+    margin-bottom: 0;
 }
 
-h3 {
+.test {
     font-size: 4.5svh;
-    padding: 0;
-    line-height: 0;
     color: orange;
+    width: 100%;
+    /* margin-top: 3svh; */
+    /* height: 4svh; */
+    /* clip-path: polygon(0% 50%, 100% 100%, 100% 100%, 0% 100%); */
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    /* background-color: aqua; */
+    min-height: 3svh;
 }
 
 .icons {
@@ -92,4 +105,20 @@ img {
 .border {
     position: absolute;
     bottom: 0;
+}
+
+@keyframes text-clip {
+    from {
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.t {
+    font-size: 5svh;
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
 }
