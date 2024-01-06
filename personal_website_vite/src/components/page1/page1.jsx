@@ -16,8 +16,8 @@ class Page1 extends Component {
         <div className="main_page">
         <div className="title">
             <div className="flex-item1">
-                <h2>Greetings,</h2>
-                <h1>Brian Le</h1>
+                <div className="greetings">Greetings,</div>
+                <div className="name">Brian Le</div>
                 <div className="test">[ Student + Developer + Koala Lover ]</div>
                 <div className="icons">
                   <div id = "Resume" target="_blank">

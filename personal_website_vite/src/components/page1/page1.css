@@ -33,7 +33,7 @@
     margin-left: -20svw;
 }
 
-h1 {
+.name {
     font-size: 18svh;
     margin: auto;
     width: 100%;
@@ -42,7 +42,7 @@ h1 {
     animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-h2 {
+.greetings {
     font-size: 6svh;
     padding: 0;
     margin-top: 20svh;
@@ -96,6 +96,7 @@ img {
 .border {
     position: absolute;
     bottom: 0;
+    border: none;
 }
 
 @keyframes text-clip {
