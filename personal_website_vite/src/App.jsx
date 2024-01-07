@@ -3,10 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import Navbar from './components/navbar/navbar.jsx'
 import Page1 from './components/page1/page1.jsx'
-
 import Page2 from './components/page2/page2.jsx'
 import Page3 from './components/page3/page3.jsx'
+
 // import 'src\components\koala\koala.jsx'
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      
+      <Navbar />
       <Page1 />
       <Page2 />
       <Page3 />
