@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga');
+.navbar {
+    position: fixed;
+    display: flex;
+    height: 10svh;
+    background-color: #0e0638;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Calistoga";
+    z-index: 1;
+    color: white;
+    box-shadow: 0px 0px 15px rgb(17, 0, 38);
+}
+
+.logo {
+    height: 5svh;
+}
+
+.redirects {
+    margin-left: auto;
+    display: flex;
+}
+
+.redirects div {
+    display: inline-block;
+    margin-right: 3svw;
+    text-align: center;
+    line-height: 10svh;
+}
