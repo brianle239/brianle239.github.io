@@ -10,14 +10,18 @@ class Navbar extends Component {
     return (
         <nav className="navbar">
           <div className="logo">
-            <div>
+            <img src = "src/assets/koala_logo.png" className="koalaLogo">
+
+            </img>
+            {/* <div>
               Brian Le
-            </div>
-            <div>
-              Le
-            </div>
+            </div> */}
+           
           </div>
           <div className="redirects">
+            <div>
+              Home
+            </div>
             <div>
               About
             </div>
