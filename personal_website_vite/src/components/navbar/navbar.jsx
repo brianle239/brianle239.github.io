@@ -9,13 +9,16 @@ class Navbar extends Component {
   render () {
     return (
         <nav className="navbar">
-          <div className="logo">
-            <img src = "src/assets/koala_logo.png" className="koalaLogo">
+         
+          <div className="navbarLogo">
+          <img src = "src/assets/koala_logo.png" className="koalaLogo">
 
-            </img>
-            {/* <div>
+          </img>
+            
+            
+            <div className="nav_name">
               Brian Le
-            </div> */}
+            </div>
            
           </div>
           <div className="redirects">
