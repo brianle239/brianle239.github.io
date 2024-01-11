@@ -6,22 +6,17 @@ import './navbar.css'
 
 function Navbar() {
  
-  
-  useEffect(() => {
-    setCount(prevCount => prevCount + 1);
-  });
-  
-  
-//   return (
-//     <nav
+  // useEffect(() => {
+  //   setCount(prevCount => prevCount + 1);
+  // });
  
-// className={isNavbarVisible ? 'visible' : 'hidden'}>
-//       </nav>
-//   );
+  // className={isNavbarVisible ? 'visible' : 'hidden'}>
+  //       </nav>
+  //   );
 
   
   return (
-      <nav className="navbar" onScroll={handleScroll}>
+      <nav className="navbar" >
         
         <div className="navbarLogo">
         <img src = "src/assets/koala_logo.png" className="koalaLogo">
@@ -59,7 +54,14 @@ function Navbar() {
   );
 
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(Navbar());
+
 
 // export default Navbar;
+function Parentheses() {
+  return (<h1>
+              We can call function using name of the 
+              function followed by Parentheses 
+          </h1>);
+}
+
+export default Navbar
