@@ -1,11 +1,35 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import './navbar.css'
 
 function Navbar() {
+  const [scrollDirection, setScrollDirection] = useState(false);
+  let prevScrollY = window.scrollY;
+  useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > prevScrollY) {
+      setScrollDirection(true);
+      console.log("hidden");
+    } else if (currentScrollY < prevScrollY) {
+      setScrollDirection(false);
+      console.log("visible");
+    }
+    prevScrollY = currentScrollY;
+    
+  };
+  // useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return
  
+  () =>
+   
+  window.removeEventListener('scroll', handleScroll);
+    }, []);
+  // window.addEventListener('scroll', handleScroll);
+
   // useEffect(() => {
   //   setCount(prevCount => prevCount + 1);
   // });
@@ -16,7 +40,7 @@ function Navbar() {
 
   
   return (
-      <nav className="navbar" >
+      <nav className={`navbar ${scrollDirection ? 'hidden' : 'visible'}`} >
         
         <div className="navbarLogo">
         <img src = "src/assets/koala_logo.png" className="koalaLogo">
@@ -25,7 +49,7 @@ function Navbar() {
           
           
           <div className="nav_name">
-            Brian Le
+            Brian Le {scrollDirection}
           </div>
           
         </div>
@@ -56,12 +80,5 @@ function Navbar() {
 }
 
 
-// export default Navbar;
-function Parentheses() {
-  return (<h1>
-              We can call function using name of the 
-              function followed by Parentheses 
-          </h1>);
-}
 
 export default Navbar

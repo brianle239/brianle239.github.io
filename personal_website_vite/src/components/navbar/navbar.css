@@ -56,3 +56,11 @@
 .redirects div:hover {
     color: rgba(255, 255, 255, .5)
 }
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
