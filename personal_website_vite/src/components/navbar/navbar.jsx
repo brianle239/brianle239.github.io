@@ -39,10 +39,9 @@ function Navbar({ name, age, occupation }) {
   // };
  
   const handleScrollToAbout = () => {
-    console.log(name);
-    var x = document.getElementById('test');
-    x.scrollIntoView({ behavior: 'smooth' });
-    // name.current.scrollIntoView({ behavior: 'smooth' });
+    console.log(name.current);
+    
+    name.current.scrollIntoView();
   };
   
 

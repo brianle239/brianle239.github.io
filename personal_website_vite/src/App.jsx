@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, createRef } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
@@ -16,18 +16,28 @@ import Page3 from './components/page3/page3.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
-  const one = useRef(null);
+  const one = createRef();
+  const two = createRef();
+  const three = createRef();
 
-
+  const handleScrollToAbout = () => {
+    console.log("Nope");
+    one.current.scrollIntoView();
+  };
   return (
     <div className='page1'>
       
       <Navbar name={one} id="test"/>
       
       
-      <Page1 ref={one}/>
-      <Page2 />
+      <Page1 />
+      <div>Nope</div>
+      <div ref={one}></div>
+      <Page2> </Page2>
       <Page3 />
+      <div onClick={handleScrollToAbout}>
+        Hello
+      </div>
      
     </div>
     
