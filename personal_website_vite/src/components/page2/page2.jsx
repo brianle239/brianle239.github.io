@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component, useRef, createRef} from "react";
 import './page2.css'
 import Wave_border_top from "../wave_borders/wave_border_top/wave_border_top.jsx";
 class Page2 extends Component {
@@ -7,10 +7,11 @@ class Page2 extends Component {
     super(props);
     this.changeProf = this.changeProf.bind(this);
   }
-
+  yes = "yes";
+  myRef = createRef();
   state = {
     isClicked: false,
-    currentImage: 'src/assets/profile_picture_crop.jpg'
+    currentImage: 'src/assets/profile_picture_crop.jpg',
   };
 
   isTransitioning = false;
@@ -42,12 +43,13 @@ class Page2 extends Component {
     // this.isTransitioning = false;
     
   }
+  
 
 
   render () {
     return (
         <>
-            <div className="page2">
+            <div className="page2" ref={this.myRef}>
               <div className="profImage">
                 <div className="imageBackground">
 

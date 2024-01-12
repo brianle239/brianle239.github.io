@@ -1,21 +1,20 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Link } from 'react';
+import Page2 from "../page2/page2";
 
 import './navbar.css'
 
-function Navbar() {
-  const [scrollDirection, setScrollDirection] = useState(false);
+function Navbar({ name, age, occupation }) {
+  const [scrollDirection, setScrollDirection] = useState(true);
   let prevScrollY = window.scrollY;
   useEffect(() => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > prevScrollY) {
       setScrollDirection(true);
-      console.log("hidden");
     } else if (currentScrollY < prevScrollY) {
       setScrollDirection(false);
-      console.log("visible");
     }
     prevScrollY = currentScrollY;
     
@@ -28,15 +27,25 @@ function Navbar() {
    
   window.removeEventListener('scroll', handleScroll);
     }, []);
-  // window.addEventListener('scroll', handleScroll);
 
-  // useEffect(() => {
-  //   setCount(prevCount => prevCount + 1);
-  // });
+  // handleScroll = e => {
+  //   e.preventDefault();
+  //   const main = this.main.current;
+  //   window.scrollTo({
+  //     top: main.offsetTop,
+  //     left: 0,
+  //     behavior: "instant"
+  //   });
+  // };
  
-  // className={isNavbarVisible ? 'visible' : 'hidden'}>
-  //       </nav>
-  //   );
+  const handleScrollToAbout = () => {
+    console.log(name);
+    var x = document.getElementById('test');
+    x.scrollIntoView({ behavior: 'smooth' });
+    // name.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  
+
 
   
   return (
@@ -49,7 +58,7 @@ function Navbar() {
           
           
           <div className="nav_name">
-            Brian Le {scrollDirection}
+            Brian Le
           </div>
           
         </div>
@@ -57,7 +66,8 @@ function Navbar() {
           <div>
             Home
           </div>
-          <div>
+          {/*  onClick={handleScrollToAbout} */}
+          <div onClick={handleScrollToAbout}>  
             About
           </div>
           <div>
