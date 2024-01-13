@@ -30,14 +30,12 @@ function App() {
       <Navbar name={one} id="test"/>
       
       
-      <Page1 />
-      <div>Nope</div>
       <div ref={one}></div>
-      <Page2> </Page2>
+      <Page1 />
+      <div ref={two}></div>
+      <Page2 />
+      <div ref={three}></div>
       <Page3 />
-      <div onClick={handleScrollToAbout}>
-        Hello
-      </div>
      
     </div>
     
