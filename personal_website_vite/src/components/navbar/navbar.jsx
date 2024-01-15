@@ -6,50 +6,58 @@ import Page2 from "../page2/page2";
 import './navbar.css'
 
 function Navbar({ page1, page2, page3 }) {
-  const [scrollDirection, setScrollDirection] = useState(true);
+  const [scrollDirection, setScrollDirection] = useState(false);
   let prevScrollY = window.scrollY;
+  const [navMoved, setNavCount] = useState(0);
+  let count = 0;
+  let c = 0;
   useEffect(() => {
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > prevScrollY) {
-      setScrollDirection(true);
-    } else if (currentScrollY < prevScrollY) {
-      setScrollDirection(false);
-    }
-    prevScrollY = currentScrollY;
+    const handleScroll = () => {
+      count += 1;
+      console.log("numer", navMoved, count);
+      if (navMoved == 0) {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > prevScrollY) {
+          setScrollDirection(true);
+        } else if (currentScrollY < prevScrollY) {
+          setScrollDirection(false);
+        }
+        prevScrollY = currentScrollY;
+      } 
+      else {
+        setNavCount(0);
+      }
+      
+      
+      
+    };
+    window.addEventListener('scroll', handleScroll); 
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
     
-  };
-  // useEffect(() => {
-  window.addEventListener('scroll', handleScroll);
-  () =>
-  window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-  // handleScroll = e => {
-  //   e.preventDefault();
-  //   const main = this.main.current;
-  //   window.scrollTo({
-  //     top: main.offsetTop,
-  //     left: 0,
-  //     behavior: "instant"
-  //   });
-  // };
+  
+  }, [navMoved]);
+  
  
   const scrollOne = () => {    
     page1.current.scrollIntoView();
     setScrollDirection(false);
+    setNavCount(navMoved+1);
     
   };
+  
   const scrollTwo = () => {    
-    const currentScrollY = window.scrollY;
+   
     page2.current.scrollIntoView();
-    setScrollDirection(false);
-    prevScrollY = currentScrollY;
+    setNavCount(navMoved+1);
+
   }
 
   const scrollThree = () => {    
     page3.current.scrollIntoView();
     setScrollDirection(false);
+    setNavCount(navMoved+1);
   };
   
 
