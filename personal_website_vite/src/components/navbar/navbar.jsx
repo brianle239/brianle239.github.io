@@ -5,7 +5,7 @@ import Page2 from "../page2/page2";
 
 import './navbar.css'
 
-function Navbar({ name, age, occupation }) {
+function Navbar({ page1, page2, page3 }) {
   const [scrollDirection, setScrollDirection] = useState(true);
   let prevScrollY = window.scrollY;
   useEffect(() => {
@@ -21,10 +21,7 @@ function Navbar({ name, age, occupation }) {
   };
   // useEffect(() => {
   window.addEventListener('scroll', handleScroll);
-  return
- 
   () =>
-   
   window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -38,10 +35,21 @@ function Navbar({ name, age, occupation }) {
   //   });
   // };
  
-  const handleScrollToAbout = () => {
-    console.log(name.current);
+  const scrollOne = () => {    
+    page1.current.scrollIntoView();
+    setScrollDirection(false);
     
-    name.current.scrollIntoView();
+  };
+  const scrollTwo = () => {    
+    const currentScrollY = window.scrollY;
+    page2.current.scrollIntoView();
+    setScrollDirection(false);
+    prevScrollY = currentScrollY;
+  }
+
+  const scrollThree = () => {    
+    page3.current.scrollIntoView();
+    setScrollDirection(false);
   };
   
 
@@ -62,17 +70,14 @@ function Navbar({ name, age, occupation }) {
           
         </div>
         <div className="redirects">
-          <div>
+          <div onClick={scrollOne}>
             Home
           </div>
           {/*  onClick={handleScrollToAbout} */}
-          <div onClick={handleScrollToAbout}>  
+          <div onClick={scrollTwo}>  
             About
           </div>
-          <div>
-            Technologies
-          </div>
-          <div>
+          <div onClick={scrollThree}>
             Experience
           </div>
           <div>

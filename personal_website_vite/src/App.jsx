@@ -27,7 +27,7 @@ function App() {
   return (
     <div className='page1'>
       
-      <Navbar name={one} id="test"/>
+      <Navbar page1={one} page2={two} page3={three} id="test"/>
       
       
       <div ref={one}></div>
