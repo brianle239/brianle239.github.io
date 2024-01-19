@@ -14,7 +14,7 @@
 
 .selfImage {
     position: absolute;
-    background-image: url("src/assets/profile_picture_crop.jpg");
+    background-image: url("./src/assets/profile_picture_crop.jpg");
     background-size: cover;
     width: 50%;
     height: 75%;

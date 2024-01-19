@@ -64,11 +64,9 @@ function Navbar({ page1, page2, page3 }) {
       <nav className={`navbar ${scrollDirection ? 'hidden' : 'visible'}`} >
         
         <div className="navbarLogo">
-        <img src = "./src/assets/koala_logo.png" className="koalaLogo">
-
+        <img src = "../../src/assets/koala_logo.png" className="koalaLogo">
         </img>
-          
-          
+   
           <div className="nav_name">
             Brian Le
           </div>
