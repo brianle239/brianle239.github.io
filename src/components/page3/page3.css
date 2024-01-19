@@ -1,6 +1,6 @@
 .page3 {
     height: 100svh;
-    background-image: url('./northrop_grumman_sensor-transformed.jpeg');
+    background-image: url('../northrop_grumman_sensor-transformed.jpeg');
     background-attachment: fixed;
     width: 100%;
     background-position: center;
