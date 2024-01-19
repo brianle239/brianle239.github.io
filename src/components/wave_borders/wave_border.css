@@ -7,9 +7,9 @@
 }
 
 .layer1 {
-    background-image: url("./src/assets/layered-waves-haikei.svg");
+    background-image: url("./layered-waves-haikei.svg");
 }
 
 .layer2 {
-    background-image: url("./src/assets/layered-waves-haikei_top.svg");
+    background-image: url("./layered-waves-haikei_top.svg");
 }

@@ -19,20 +19,20 @@ class Page1 extends Component {
                 <div className="icons loadFade">
                   <div id = "Resume" target="_blank">
                     <a href="https://brianle239.github.io/resume_git.pdf">
-                    <img src="./src\assets\document_logo.png" alt="Resume Icon" class="image_link" />
+                    <img src="./document_logo.png" alt="Resume Icon" class="image_link" />
                     <p className = "img_caption">Resume</p>
                     </a>
                 
                   </div>
                   <div id = "GitHub" target="_blank">
                       <a href="https://github.com/brianle239">
-                      <img src="./src\assets\github_logo.png" alt="GitHub Icon" class="image_link" />
+                      <img src="./github_logo.png" alt="GitHub Icon" class="image_link" />
                       <p className = "img_caption">GitHub</p>
                       </a>
                   </div>
                   <div id = "Linkedin" target="_blank">
                       <a href="https://www.linkedin.com/in/briananhle/">
-                      <img src="./src\assets\linkedin_logo.png" alt="Linkedin Icon" class="image_link" />
+                      <img src="./linkedin_logo.png" alt="Linkedin Icon" class="image_link" />
                       <p className = "img_caption">Linkedin</p>
                       </a>
             
