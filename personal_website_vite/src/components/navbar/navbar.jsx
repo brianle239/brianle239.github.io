@@ -6,7 +6,7 @@ import Page2 from "../page2/page2";
 import './navbar.css'
 
 function Navbar({ page1, page2, page3 }) {
-  const [scrollDirection, setScrollDirection] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState(true);
   let prevScrollY = window.scrollY;
   const [navMoved, setNavCount] = useState(0);
   

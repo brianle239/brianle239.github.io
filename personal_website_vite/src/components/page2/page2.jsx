@@ -90,8 +90,25 @@ class Page2 extends Component {
             </div>
             <div className="techStack">
               <div className="techIntro">
-                My Tech Stack
+                <div className="currentTech">
+                  ~ Current Tech ~
+                </div>
+                <div className="currentTechText">
+                  I am always learning but so far, these are my favorite technologies I use. Of those listed, 
+                  my first introduction to these technologies came from working on my projects listed below. Currently, I 
+                  am working on personal projects involing AWS and React.
+                </div>
+                
+                <div className="learningTech">
+                    ~ Currently Learning ~
+                </div>
+                <div className="learningTechText">
+                    I am diving head into AI and machine learning by exploring regression and classification
+                    models using Pytorch. I am slowly incorperating AI into my tech stack and taking any 
+                    oppurtunity to apply AI in any of my projects.
+                </div>
               </div>
+    
               <div className="techIconList">
               <div className="techIcon">
                 Hello

@@ -50,7 +50,7 @@
     flex: 1;
     color: white;
     font-family: 'Calistoga';
-    font-size: larger;
+    font-size: 3svh;
     padding-top: 6svh;
     padding-right: 10svh;
 }
@@ -64,16 +64,42 @@
 }
 
 .techStack {
+    display: flex;
     font-family: 'Calistoga';
 }
 
 .techIntro {
+    /* background-color: #271FB3; */
+    background-color: rgb(27, 149, 255);
     text-align: center;
     color: white;
     font-size: 6svh;
+    width: 50%;
+    padding-bottom: 7svh;
+    padding-left: 4svw;
+    padding-right: 4svw;
 }
 
 .techIconList {
-    display: flex;
     background-color: aliceblue;
+    width: 50%;
+}
+
+.currentTech {
+    font-size: 5svh;
+}
+
+.currentTechText {
+    margin-top: 5svh;
+    font-size: 3svh;
+}
+
+.learningTech {
+    font-size: 5svh;
+    margin-top: 20svh;
+}
+
+.learningTechText {
+    margin-top: 5svh;
+    font-size: 3svh;
 }
