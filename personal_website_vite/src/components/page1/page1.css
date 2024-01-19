@@ -39,14 +39,18 @@
     width: 100%;
     padding: 10px;
     padding: 0;
-    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    /* animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both, center-left 3s; */
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1), center-left 1s 0s cubic-bezier(.71, .34, .23, .95);
+    animation-delay: 0s, 1s;
+    /* transform: translateX(-50%); */
 }
 
 .greetings {
     font-size: 6svh;
     padding: 0;
     margin-top: 20svh;
-    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    animation: text-clip-greetings 1s 0s cubic-bezier(0.5, 0, 0.1, 1), center-left-greetings 1s 0s cubic-bezier(.71, .34, .23, .95);
+    animation-delay: 0s, 1s;
     min-height: 10px;
     margin-bottom: 0;
 }
@@ -56,6 +60,7 @@
     color: orange;
     width: 100%;
     animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1);
+    animation-delay: 2s;
     min-height: 3svh;
 }
 
@@ -101,10 +106,41 @@ img {
 
 @keyframes text-clip {
     from {
+        transform: translateX(45%);
         clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
     }
     to {
+        transform: translateX(45%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes text-clip-greetings {
+    from {
+        transform: translateX(75%);
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+        transform: translateX(75%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes center-left {
+    from {
+        transform: translateX(45%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes center-left-greetings {
+    from {
+        transform: translateX(75%);
+    }
+    to {
+        transform: translateX(0%);
     }
 }
 
@@ -113,4 +149,12 @@ img {
     background-color: aliceblue;
     padding: 0;
     margin: 0;
+}
+
+.hidenn {
+    display: none;
+}
+
+.show {
+    display: auto;
 }
