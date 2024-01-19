@@ -11,7 +11,7 @@ class Page2 extends Component {
   myRef = createRef();
   state = {
     isClicked: false,
-    currentImage: 'src/assets/profile_picture_crop.jpg',
+    currentImage: './src/assets/profile_picture_crop.jpg',
   };
 
   isTransitioning = false;
@@ -24,14 +24,14 @@ class Page2 extends Component {
       if (!this.state.isClicked) {
         this.setState({
           isClicked: true,
-          currentImage: 'src/assets/shirokuma.jpg'
+          currentImage: './src/assets/shirokuma.jpg'
           
         });
       }
       else {
         this.setState({
           isClicked: false,
-          currentImage: 'src/assets/profile_picture_crop.jpg',
+          currentImage: './src/assets/profile_picture_crop.jpg',
           
         });
       }
