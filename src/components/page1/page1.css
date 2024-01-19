@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Calistoga');
 .main_page {
-    background-image: url('/public/constelation.svg');
+    background-image: url('./public/constelation.svg');
     width: 100%;
     aspect-ratio: 4/2;
     background-position: center;
