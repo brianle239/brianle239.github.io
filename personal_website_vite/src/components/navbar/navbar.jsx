@@ -9,12 +9,9 @@ function Navbar({ page1, page2, page3 }) {
   const [scrollDirection, setScrollDirection] = useState(false);
   let prevScrollY = window.scrollY;
   const [navMoved, setNavCount] = useState(0);
-  let count = 0;
-  let c = 0;
+  
   useEffect(() => {
     const handleScroll = () => {
-      count += 1;
-      console.log("numer", navMoved, count);
       if (navMoved == 0) {
         const currentScrollY = window.scrollY;
         if (currentScrollY > prevScrollY) {
