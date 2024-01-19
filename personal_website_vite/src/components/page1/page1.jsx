@@ -8,9 +8,6 @@ class Page1 extends Component {
     super(props);
   }
 
-  
-  
-
   render () {
     return (
         <div className="main_page">
@@ -18,8 +15,8 @@ class Page1 extends Component {
             <div className="flex-item1">
                 <div className="greetings">Greetings,</div>
                 <div className="name">Brian Le</div>
-                <div className="test">[ Student + Developer + Koala Lover ]</div>
-                <div className="icons">
+                <div className="test loadFade">[ Student + Developer + Koala Lover ]</div>
+                <div className="icons loadFade">
                   <div id = "Resume" target="_blank">
                     <a href="https://brianle239.github.io/resume_git.pdf">
                     <img src="src\assets\document_logo.png" alt="Resume Icon" class="image_link" />
@@ -42,7 +39,7 @@ class Page1 extends Component {
                   </div>
                 </div>
             </div>
-            <div className="flex-item2">
+            <div className="flex-item2 loadFade">
                 <Koala />
             </div>
             
