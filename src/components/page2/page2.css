@@ -76,22 +76,12 @@
     font-size: 6svh;
     width: 50%;
     padding-bottom: 7svh;
-    padding-left: 4svw;
-    padding-right: 4svw;
-}
-
-.techIconList {
-    background-color: aliceblue;
-    width: 50%;
+    padding-left: 7svw;
+    padding-right: 7svw;
 }
 
 .currentTech {
     font-size: 5svh;
-}
-
-.currentTechText {
-    margin-top: 5svh;
-    font-size: 3svh;
 }
 
 .learningTech {
@@ -99,7 +89,36 @@
     margin-top: 20svh;
 }
 
-.learningTechText {
+.techDesc {
     margin-top: 5svh;
-    font-size: 3svh;
+    font-size: 2.5svh;
+}
+
+.techIconList {
+    width: 50%;
+    padding: 4svh;
+    background-color: aliceblue;
+}
+
+.techSubTitle {
+    font-size: 2.5em;
+}
+
+.list {
+    font-size: larger;
+    list-style: inside;
+}
+
+li {
+    display: list-item;
+}
+
+ul.a {
+    list-style-type: disc outside none;
+    margin: 1em;
+}
+
+.border-right {
+    border: 8px solid;
+    border-image: linear-gradient(to bottom, rgba(212, 40, 40, .5), greenyellow) 0 1 0 0 100%;
 }

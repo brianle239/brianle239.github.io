@@ -1,7 +1,6 @@
 
-
-body {
-    
+Converted to text file so it won't mess with site
+/* body {
     margin: 0px;
     content: "";
     background-image: url('images/PB_Back5.jpg');
@@ -10,20 +9,15 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
-    
-    background-color: rgb(230,230,250, .1);
-
+    background-color: rgb(230, 230, 250, .1);
     background-blend-mode: soft-light;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+} */
 
-
-}
-
-
-body > div {
+body>div {
     background-color: rgb(244, 244, 255);
     width: 100vw;
     height: 100vh;
@@ -32,8 +26,7 @@ body > div {
     line-height: 75px;
     font-size: 30px;
     position: 50%;
-   
-  }
+}
 
 .intro {
     background-color: rgba(0, 0, 0, .0);
@@ -46,22 +39,17 @@ body > div {
     margin-bottom: 0;
     font-family: Palatino, URW Palladio L, serif;
     text-align: center;
-
 }
 
 h1 {
-    
     font-size: .75em;
     margin-top: 150px;
     margin-bottom: 0;
-
 }
 
-h2 {  
-    
+h2 {
     margin: 0;
     font-size: 3.5em;
-
 }
 
 .links {
@@ -72,13 +60,9 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    
-
 }
 
-
-.links > div {
-
+.links>div {
     margin: 10px;
     font-size: 30px;
     position: 50%;
@@ -86,8 +70,6 @@ h2 {
     font-size: .5em;
     height: 5.75em;
     border-radius: 5px 5px;
-    
-    
 }
 
 .image_link {
@@ -96,34 +78,25 @@ h2 {
     margin-top: 5px;
     height: 50px;
     width: 100%;
-    
-    
-    
 }
 
 .img_caption {
-    
     line-height: 0px;
     height: 2.5em;
     font-size: 1em;
     opacity: 0;
-
 }
 
-
-.links > div:hover p{
-    
+.links>div:hover p {
     color: black;
     opacity: 1;
     transition: 1s;
-
 }
 
-.links >div:hover {
+.links>div:hover {
     background-color: rgba(235, 238, 252, 0.5);
     transition: 1s;
 }
-
 
 #profile_pic {
     height: 350px;
@@ -135,7 +108,6 @@ h2 {
     margin-top: 10%;
     /* position: 50%; */
     display: block;
-    
 }
 
 .profpic {
@@ -146,24 +118,20 @@ h2 {
     display: flex;
 }
 
-.profpic > div {
-
+.profpic>div {
     margin-top: 5%;
     margin-left: 8%;
     margin-bottom: 5%;
-
-
 }
 
 .abm_sub {
-
     margin: 0px;
     font-size: 20px;
     text-align: left;
     line-height: .2;
     margin-top: 20px;
-    
 }
+
 .abm_text {
     margin: 0px;
     text-align: left;
@@ -173,64 +141,76 @@ h2 {
 }
 
 .text {
-
     background-color: rgb(219, 226, 250);
     border-width: thick;
     border-color: slategray;
     flex-grow: 1;
     width: 100%;
     margin-bottom: 0px;
-    
 }
 
 
+/* Commented because it was messing with vite */
 
-ul {
-    /* Center */
-    /* position: absolute; */
-    /* top: 50%;
+
+/* 
+ul { */
+
+
+/* Center */
+
+
+/* position: absolute; */
+
+
+/* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    /* background-color: aliceblue; */
-    /* margin-top: 6%; */
-    padding: 0;
+
+
+/* background-color: aliceblue; */
+
+
+/* margin-top: 6%; */
+
+
+/* padding: 0;
     width: 700px;
     height: 550px;
-    display: block;
-    
+    display: block; */
 
-}
 
-ul li {
+/* 
+} */
+
+
+/* ul li {
     margin-top: 15%;
     list-style: none;
     position:relative;
     
-    
-    /* position: absolute; */
-    width: 200px;
-    height: 200px;
-    background: black;
-    transform: rotate(45deg);
-    transition: .5s;
-    color: white;
-    font-size: 200%;
-    font-weight: 100;
+width: 200px;
+height: 200px;
+background: black;
+transform: rotate(45deg);
+transition: .5s;
+color: white;
+font-size: 200%;
+font-weight: 100;
 
 }
-
 ul li.it1 {
     top: 0%;
     left: 0%;
-
 }
-
 ul li.it2 {
     bottom: 27%;
-    left: 22.5%;  
+    left: 22.5%;
 }
+*/
 
-ul li.it3 {
+
+/* ul li.it3 {
     bottom: 111%;
     left: 45%;
 }
@@ -241,12 +221,11 @@ ul li.it4 {
 }
 
 ul li.it1 .bg {
-    /* background-color: #c998f7; */
-    text-align: center;
-    margin-left: -5%;
-    transform: rotate(-45deg);
-}
+text-align: center;
+margin-left: -5%;
+transform: rotate(-45deg);
 
+}
 ul li.it2 .bg {
     position: relative;
     top: -5px;
@@ -254,7 +233,6 @@ ul li.it2 .bg {
     text-align: center;
     transform: rotate(-45deg);
 }
-
 ul li.it3 .bg {
     position: relative;
     left: -10px;
@@ -262,8 +240,10 @@ ul li.it3 .bg {
     margin-left: -5%;
     transform: rotate(-45deg);
 }
+*/
 
-ul li.it4 .bg {
+
+/* ul li.it4 .bg {
     
     text-align: center;
     margin-left: -17.5%;
@@ -274,17 +254,15 @@ ul li.it4 .bg {
 ul li:hover .overlay1{
     
     opacity: 1;
-}
+} */
 
-.overlay1{
+.overlay1 {
     font-size: 50%;
     position: relative;
     opacity: 0;
-    
     transform: 45deg;
     text-align: center;
     transition: .5 ease;
-    
 }
 
 .project {
@@ -296,7 +274,6 @@ ul li:hover .overlay1{
     text-align: center;
     margin: 1em;
     font-size: 2em;
-
 }
 
 .text_project_title {
@@ -307,13 +284,9 @@ ul li:hover .overlay1{
     margin-right: 5%
 }
 
-.text_project_text{
-    
+.text_project_text {
     padding-left: 15%;
     text-align: left;
     line-height: 1;
     margin-right: 10%
-
-    
 }
-

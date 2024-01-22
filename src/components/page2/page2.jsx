@@ -81,7 +81,7 @@ class Page2 extends Component {
                   <br />
                   <br />
                   <div className="secret" onClick={this.changeProf}>
-                    [How my friends sees me]
+                    [How my friends see me]
                   </div>
                   
                   
@@ -89,11 +89,11 @@ class Page2 extends Component {
                  
             </div>
             <div className="techStack">
-              <div className="techIntro">
+              <div className="techIntro border-right">
                 <div className="currentTech">
                   ~ Current Tech ~
                 </div>
-                <div className="currentTechText">
+                <div className="techDesc">
                   I am always learning but so far, these are my favorite technologies I use. Of those listed, 
                   my first introduction to these technologies came from working on my projects listed below. Currently, I 
                   am working on personal projects involing AWS and React.
@@ -102,7 +102,7 @@ class Page2 extends Component {
                 <div className="learningTech">
                     ~ Currently Learning ~
                 </div>
-                <div className="learningTechText">
+                <div className="techDesc">
                     I am diving head into AI and machine learning by exploring regression and classification
                     models using Pytorch. I am slowly incorperating AI into my tech stack and taking any 
                     oppurtunity to apply AI in any of my projects.
@@ -110,9 +110,39 @@ class Page2 extends Component {
               </div>
     
               <div className="techIconList">
-              <div className="techIcon">
+                <div className="techSubTitle"> 
+                  Fluent Languages
+                </div>
+                
+                <ul className="list">
+                  <li>Python</li>
+                  <li>C++</li>
+                  <li>C</li>
+                  <li>Java</li>
+                </ul >
+
+                <div className="techSubTitle"> 
+                  Frameworks
+                
+                </div>
+                <ul className="list">
+                  <li>React / Vite</li>
+                  <li>Angular</li>
+                </ul>
+                <div className="techSubTitle">
+                  Misc.
+                </div>
+                <ul className="list">
+                  <li>MySQL</li>
+                  <li>AWS EC2 and Lambda</li>
+                  <li>Docker</li>
+                  <li>Ubuntu / Linux</li>
+                  <li>Apache Tomcat</li>
+                  
+                </ul>                
+              {/* <div className="techIcon">
                 Hello
-              </div>
+              </div> */}
               </div>
               
 
