@@ -88,7 +88,9 @@ class Page2 extends Component {
               </div>
                  
             </div>
+            Work in Progress
             <div className="techStack">
+              
               <div className="techIntro border-right">
                 <div className="currentTech">
                   ~ Current Tech ~
