@@ -101,7 +101,7 @@
 }
 
 .techSubTitle {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .list {
@@ -120,5 +120,5 @@ ul.a {
 
 .border-right {
     border: 8px solid;
-    border-image: linear-gradient(to bottom, rgba(212, 40, 40, .5), greenyellow) 0 1 0 0 100%;
+    border-image: linear-gradient(to bottom, #3284ff, #6600ff) 0 1 0 0;
 }

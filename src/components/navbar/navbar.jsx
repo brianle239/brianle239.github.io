@@ -45,14 +45,17 @@ function Navbar({ page1, page2, page3 }) {
   };
   
   const scrollTwo = () => {    
-   
+
     page2.current.scrollIntoView();
+    window.scrollBy(0, document.documentElement.clientHeight * 0.10*-1);
+    setScrollDirection(false);
     setNavCount(navMoved+1);
 
   }
 
   const scrollThree = () => {    
     page3.current.scrollIntoView();
+    window.scrollBy(0, document.documentElement.clientHeight * 0.10*-1);
     setScrollDirection(false);
     setNavCount(navMoved+1);
   };
@@ -63,7 +66,7 @@ function Navbar({ page1, page2, page3 }) {
   return (
       <nav className={`navbar ${scrollDirection ? 'hidden' : 'visible'}`} >
         
-        <div className="navbarLogo">
+        <div className="navbarLogo" onClick={scrollOne}>
         <img src = "./koala_logo.png" className="koalaLogo">
         </img>
    
