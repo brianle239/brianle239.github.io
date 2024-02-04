@@ -103,6 +103,10 @@
     font-size: 2em;
 }
 
+.technology {
+    margin-top: 4em;
+}
+
 .list {
     font-size: larger;
     list-style: inside;

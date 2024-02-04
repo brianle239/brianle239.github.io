@@ -122,11 +122,10 @@ class Page2 extends Component {
                   <li>MySQL</li>
                 </ul >
 
-  
                 {/* <div className="techSubTitle">
                   Technologies
                 </div> */}
-                <ul className="list">
+                <ul className="list technology">
                   <li>React / Vue</li>
                   <li>AWS EC2 and Lambda</li>
                   <li>Docker</li>
