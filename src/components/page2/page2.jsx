@@ -88,12 +88,11 @@ class Page2 extends Component {
               </div>
                  
             </div>
-            Work in Progress
             <div className="techStack">
               
               <div className="techIntro border-right">
                 <div className="currentTech">
-                  ~ Current Tech ~
+                  ~ My Expertise ~
                 </div>
                 <div className="techDesc">
                   I am always learning but so far, these are my favorite technologies I use. Of those listed, 
@@ -112,30 +111,23 @@ class Page2 extends Component {
               </div>
     
               <div className="techIconList">
-                <div className="techSubTitle"> 
-                  Fluent Languages
-                </div>
-                
+                {/* <div className="techSubTitle"> 
+                  Programming Languages
+                </div> */}
                 <ul className="list">
                   <li>Python</li>
                   <li>C++</li>
                   <li>C</li>
                   <li>Java</li>
+                  <li>MySQL</li>
                 </ul >
 
-                <div className="techSubTitle"> 
-                  Frameworks
-                
-                </div>
+  
+                {/* <div className="techSubTitle">
+                  Technologies
+                </div> */}
                 <ul className="list">
-                  <li>React / Vite</li>
-                  <li>Angular</li>
-                </ul>
-                <div className="techSubTitle">
-                  Misc.
-                </div>
-                <ul className="list">
-                  <li>MySQL</li>
+                  <li>React / Vue</li>
                   <li>AWS EC2 and Lambda</li>
                   <li>Docker</li>
                   <li>Ubuntu / Linux</li>

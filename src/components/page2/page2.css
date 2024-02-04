@@ -66,11 +66,11 @@
 .techStack {
     display: flex;
     font-family: 'Calistoga';
+    background-image: linear-gradient(#271FB3, #2f0075);
 }
 
 .techIntro {
     /* background-color: #271FB3; */
-    background-color: rgb(27, 149, 255);
     text-align: center;
     color: white;
     font-size: 6svh;
@@ -97,7 +97,6 @@
 .techIconList {
     width: 50%;
     padding: 4svh;
-    background-color: aliceblue;
 }
 
 .techSubTitle {
@@ -107,18 +106,24 @@
 .list {
     font-size: larger;
     list-style: inside;
+    list-style: none;
 }
 
 li {
     display: list-item;
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#e6d6ff, #918bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
 }
 
 ul.a {
-    list-style-type: disc outside none;
+    /* list-style-type: disc outside none; */
     margin: 1em;
 }
 
 .border-right {
     border: 8px solid;
-    border-image: linear-gradient(to bottom, #3284ff, #6600ff) 0 1 0 0;
+    border-image: linear-gradient(to bottom, #3284ff10, #6600ff, #235cb310) 0 1 0 0;
 }
