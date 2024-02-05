@@ -80,6 +80,7 @@
     display: flex;
     font-family: 'Calistoga';
     background-image: linear-gradient(#271FB3, #2f0075);
+    padding-top: 6svh;
 }
 
 .techIntro {
@@ -89,17 +90,18 @@
     font-size: 6svh;
     width: 50%;
     padding-bottom: 7svh;
-    padding-left: 7svw;
-    padding-right: 7svw;
+    padding-left: 10svw;
+    padding-right: 4svw;
 }
 
 .currentTech {
     font-size: 5svh;
+    padding-top: 3svh;
 }
 
 .learningTech {
     font-size: 5svh;
-    margin-top: 16svh;
+    margin-top: 14svh;
 }
 
 .techDesc {
@@ -110,6 +112,7 @@
 .techIconList {
     width: 50%;
     padding: 4svh;
+    padding-left: 6svh;
 }
 
 .techSubTitle {

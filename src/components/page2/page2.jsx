@@ -24,8 +24,8 @@ function Page2() {
   const [ref2, inView2] = useInView({ threshold: 0.1, delay:200 });
   const [ref3, inView3] = useInView({ threshold: 0.1, delay:200 });
   const [ref4, inView4] = useInView({ threshold: 0.1, delay:200 });
-  const [ref5, inView5] = useInView({ threshold: 0.2, delay:200 });
-  const [ref6, inView6] = useInView({ threshold: 0, delay:200});
+  const [ref5, inView5] = useInView({ threshold: 0.1, delay:200 });
+  const [ref6, inView6] = useInView({ threshold: 0.1, delay:200});
   const [ref7, inView7] = useInView({ threshold: 0.2, delay:200 });
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
