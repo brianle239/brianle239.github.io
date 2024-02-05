@@ -1,4 +1,4 @@
-import React, { Component, useRef, createRef} from "react";
+import React, { Component, useRef, createRef, useState} from "react";
 import { useInView } from 'react-intersection-observer';
 
 import './page2.css'
@@ -13,36 +13,45 @@ function Page2() {
   //   isClicked: false,
   //   currentImage: './profile_picture_crop.jpg',
   // };
-  var isClicked = false
-  var currentImage = './profile_picture_crop.jpg'
 
-
+  const [currentImage, setCurrentImage] = useState('./profile_picture_crop.jpg');
+  // var currentImage = './profile_picture_crop.jpg'
   const myRef = createRef();
 
-  const [ref1, inView1] = useInView({ threshold: 0.1 })
-  const [ref2, inView2] = useInView({ threshold: 0.1 })
+  // If only one trigger triggerOnce:true
+  // delay:100 reduced flickering
+  const [ref1, inView1] = useInView({ threshold: 0.1, delay:200 });
+  const [ref2, inView2] = useInView({ threshold: 0.1, delay:200 });
+  const [ref3, inView3] = useInView({ threshold: 0.1, delay:200 });
+  const [ref4, inView4] = useInView({ threshold: 0.1, delay:200 });
+  const [ref5, inView5] = useInView({ threshold: 0.2, delay:200 });
+  const [ref6, inView6] = useInView({ threshold: 0, delay:200});
+  const [ref7, inView7] = useInView({ threshold: 0.2, delay:200 });
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
-  
-  var isTransitioning = false;
-  
-
-  function changeProf() {
-    if (!this.isTransitioning) {
-      this.isTransitioning = true;
+  const changeProf = () =>{
+    if (!isTransitioning) {
+      setIsTransitioning(true);
       if (!isClicked) {
         
-        isClicked = true;
-        currentImage = './shirokuma.jpg';
+        setIsClicked(true);
+        setCurrentImage('./shirokuma.jpg');
+        // currentImage = './shirokuma.jpg';
        
       }
       else {
-        isClicked =false;
-        currentImage = './profile_picture_crop.jpg';
+        setIsClicked(false);
+        setCurrentImage('./profile_picture_crop.jpg');
+        // currentImage = './profile_picture_crop.jpg';
       }
       setTimeout(() => {
-        this.isTransitioning = false;
+        setIsTransitioning(false);
       }, 2010); // Adjust timeout to match transition duration
       
+    }
+    else {
+      console.log("transitioning");
     }
     // this.isTransitioning = false;
     
@@ -55,15 +64,15 @@ function Page2() {
         <>
             <div className="page2" ref={myRef}>
               <div className="profImage">
-                <div className="imageBackground">
+                <div className={`imageBackground ${inView6 ? ' imageBackgroundAnimate' : 'opacity_hide'}`} ref={ref7}>
 
                 </div>  
-                <img className="selfImage" style={{ backgroundImage: `url(${currentImage})`, transition: "2s" }}>
+                <img className={`selfImage ${inView6 ? ' fade_animation' : ''}`} ref={ref6} style={{ backgroundImage: `url(${currentImage})`, transition: "2s" }}>
                   
                 </img>
                 
               </div>
-              <div className="aboutMeText">
+              <div className={`aboutMeText ${inView5 ? ' fade_animation' : 'opacity_hide'}`} ref={ref5}>
                   Aspiring software developer/engineer in <p style={{color:"orange", display:"inline"}}>Los Angeles, CA</p> with 1 year of 
                   professional experience at Northrop Grumman
                   <br />
@@ -95,6 +104,7 @@ function Page2() {
             <div className="techStack">
               
               <div className="techIntro border-right">
+              <div className = {`${inView3 ? ' fade_animation' : 'opacity_hide'}`} ref={ref3}>
                 <div className="currentTech">
                 ~ My Expertise ~
                 </div>
@@ -103,7 +113,8 @@ function Page2() {
                   my first introduction to these technologies came from working on my projects listed below. Currently, I 
                   am working on personal projects involing AWS and React.
                 </div>
-                
+                </div>
+                <div className = {`${inView4 ? ' fade_animation' : 'opacity_hide'}`} ref={ref4}>
                 <div className="learningTech">
                 ~ Currently Learning ~
                 </div>
@@ -111,6 +122,7 @@ function Page2() {
                     I am diving head into AI and machine learning by exploring regression and classification
                     models using Pytorch. I am slowly incorperating AI into my tech stack and taking any 
                     oppurtunity to apply AI in any of my projects.
+                </div>
                 </div>
               </div>
     
