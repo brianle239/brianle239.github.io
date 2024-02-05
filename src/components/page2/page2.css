@@ -86,11 +86,11 @@
 
 .learningTech {
     font-size: 5svh;
-    margin-top: 20svh;
+    margin-top: 16svh;
 }
 
 .techDesc {
-    margin-top: 5svh;
+    margin-top: 3svh;
     font-size: 2.5svh;
 }
 
@@ -116,7 +116,7 @@
 li {
     display: list-item;
     font-size: 2.5em;
-    background: -webkit-linear-gradient(#e6d6ff, #918bff);
+    background: -webkit-linear-gradient(#f6f1ff, #918bff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
@@ -130,4 +130,24 @@ ul.a {
 .border-right {
     border: 8px solid;
     border-image: linear-gradient(to bottom, #3284ff10, #6600ff, #235cb310) 0 1 0 0;
+}
+
+.fade_animation {
+    animation: fade-in-up .8s 0s cubic-bezier(0.5, 0, 0.1, 1);
+    color: aquamarine;
+}
+
+.opacity_hide {
+    opacity: 0;
+}
+
+@keyframes fade-in-up {
+    from {
+        transform: translate(0, 10svh);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }

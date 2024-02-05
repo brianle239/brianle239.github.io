@@ -1,39 +1,43 @@
 import React, { Component, useRef, createRef} from "react";
+import { useInView } from 'react-intersection-observer';
+
 import './page2.css'
 import Wave_border_top from "../wave_borders/wave_border_top/wave_border_top.jsx";
-class Page2 extends Component {
+function Page2() {
   
-  constructor(props) {
-    super(props);
-    this.changeProf = this.changeProf.bind(this);
-  }
-  yes = "yes";
-  myRef = createRef();
-  state = {
-    isClicked: false,
-    currentImage: './profile_picture_crop.jpg',
-  };
+  // constructor(props) {
+  //   super(props);
+  //   this.changeProf = this.changeProf.bind(this);
+  // }
+  // const state = {
+  //   isClicked: false,
+  //   currentImage: './profile_picture_crop.jpg',
+  // };
+  var isClicked = false
+  var currentImage = './profile_picture_crop.jpg'
 
-  isTransitioning = false;
+
+  const myRef = createRef();
+
+  const [ref1, inView1] = useInView({ threshold: 0.1 })
+  const [ref2, inView2] = useInView({ threshold: 0.1 })
+
+  
+  var isTransitioning = false;
   
 
-  changeProf() {
-    
+  function changeProf() {
     if (!this.isTransitioning) {
       this.isTransitioning = true;
-      if (!this.state.isClicked) {
-        this.setState({
-          isClicked: true,
-          currentImage: './shirokuma.jpg'
-          
-        });
+      if (!isClicked) {
+        
+        isClicked = true;
+        currentImage = './shirokuma.jpg';
+       
       }
       else {
-        this.setState({
-          isClicked: false,
-          currentImage: './profile_picture_crop.jpg',
-          
-        });
+        isClicked =false;
+        currentImage = './profile_picture_crop.jpg';
       }
       setTimeout(() => {
         this.isTransitioning = false;
@@ -42,19 +46,19 @@ class Page2 extends Component {
     }
     // this.isTransitioning = false;
     
-  }
+  };
   
 
 
-  render () {
+ 
     return (
         <>
-            <div className="page2" ref={this.myRef}>
+            <div className="page2" ref={myRef}>
               <div className="profImage">
                 <div className="imageBackground">
 
                 </div>  
-                <img className="selfImage" style={{ backgroundImage: `url(${this.state.currentImage})`, transition: "2s" }}>
+                <img className="selfImage" style={{ backgroundImage: `url(${currentImage})`, transition: "2s" }}>
                   
                 </img>
                 
@@ -80,7 +84,7 @@ class Page2 extends Component {
                   Most recent languaged learned: Prolog
                   <br />
                   <br />
-                  <div className="secret" onClick={this.changeProf}>
+                  <div className="secret" onClick={changeProf}>
                     [How my friends see me]
                   </div>
                   
@@ -92,7 +96,7 @@ class Page2 extends Component {
               
               <div className="techIntro border-right">
                 <div className="currentTech">
-                  ~ My Expertise ~
+                ~ My Expertise ~
                 </div>
                 <div className="techDesc">
                   I am always learning but so far, these are my favorite technologies I use. Of those listed, 
@@ -101,7 +105,7 @@ class Page2 extends Component {
                 </div>
                 
                 <div className="learningTech">
-                    ~ Currently Learning ~
+                ~ Currently Learning ~
                 </div>
                 <div className="techDesc">
                     I am diving head into AI and machine learning by exploring regression and classification
@@ -114,7 +118,7 @@ class Page2 extends Component {
                 {/* <div className="techSubTitle"> 
                   Programming Languages
                 </div> */}
-                <ul className="list">
+                <ul className={`list ${inView1 ? ' fade_animation' : 'opacity_hide'}`} ref={ref1}>
                   <li>Python</li>
                   <li>C++</li>
                   <li>C</li>
@@ -125,7 +129,7 @@ class Page2 extends Component {
                 {/* <div className="techSubTitle">
                   Technologies
                 </div> */}
-                <ul className="list technology">
+                <ul className= {`list technology ${inView2 ? ' fade_animation' : 'opacity_hide'}`} ref={ref2}>
                   <li>React / Vue</li>
                   <li>AWS EC2 and Lambda</li>
                   <li>Docker</li>
@@ -144,7 +148,7 @@ class Page2 extends Component {
     
     );
 
-  }
+  
 }
 
 export default Page2;

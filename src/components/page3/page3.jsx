@@ -15,7 +15,7 @@ class Page3 extends Component {
             <div className="page3">
             <Wave_border_top />
             <div className="border">
-            <Wave_border /> 
+            {/* <Wave_border />  */}
             </div>
             
             </div>

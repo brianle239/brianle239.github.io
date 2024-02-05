@@ -32,7 +32,7 @@ class Page1 extends Component {
                   </div>
                   <div id = "Linkedin" target="_blank">
                       <a href="https://www.linkedin.com/in/briananhle/">
-                      <img src="./linkedin_logo.png" alt="Linkedin Icon" class="image_link" />
+                      <img src="./linkedin_logo.png" alt="Linkedin Icon" className="image_link" />
                       <p className = "img_caption">Linkedin</p>
                       </a>
             
