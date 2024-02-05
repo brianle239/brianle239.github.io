@@ -101,7 +101,7 @@
 
 .learningTech {
     font-size: 5svh;
-    margin-top: 14svh;
+    margin-top: 12svh;
 }
 
 .techDesc {
@@ -124,7 +124,7 @@
 }
 
 .list {
-    font-size: larger;
+    font-size: 2.5svh;
     list-style: inside;
     list-style: none;
 }
