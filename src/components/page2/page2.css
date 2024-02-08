@@ -101,7 +101,7 @@
 
 .learningTech {
     font-size: 5svh;
-    margin-top: 12svh;
+    margin-top: 17svh;
 }
 
 .techDesc {
@@ -135,7 +135,7 @@ li {
     background: -webkit-linear-gradient(#f6f1ff, #918bff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 1;
+    line-height: 1.15;
 }
 
 ul.a {

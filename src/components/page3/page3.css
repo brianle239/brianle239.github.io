@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga');
 .page3 {
     height: 100svh;
     /* background-image: url('../northrop_grumman_sensor-transformed.jpeg');
@@ -6,6 +7,8 @@
     background-position: center;
     background-size: cover;
     position: relative; */
+    position: relative;
+    font-family: 'Calistoga';
 }
 
 .border {
@@ -13,4 +16,45 @@
     bottom: 0svh;
     left: 0;
     right: 0;
+}
+
+.exp {
+    width: 75svw;
+    margin-left: 12.5svw;
+    color: rgb(222, 222, 222);
+}
+
+.expTitle {
+    font-size: 7svh;
+}
+
+.expFlex {
+    display: flex;
+    width: 100%;
+    font-size: 2svh;
+    padding-top: 8svh;
+}
+
+.expFlex>div {
+    /* margin: 4svw; */
+}
+
+.expBorder {
+    width: 100%;
+    border: 3px solid;
+    border-image: linear-gradient(to left, #3284ff00, #f2e9ff, #235cb300) 0 0 1 0;
+    padding-top: 5svh;
+}
+
+.expCompName {
+    width: 15%;
+}
+
+.expPos {
+    padding-left: 5svw;
+    width: 30%
+}
+
+.expDesc {
+    width: 50%;
 }
