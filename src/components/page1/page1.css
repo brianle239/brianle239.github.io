@@ -23,14 +23,24 @@
 
 .flex-item1 {
     flex: 1;
-    width: 50em;
 }
 
 .flex-item2 {
     flex: 1;
     text-align: left;
-    margin-top: -5svh;
-    margin-left: -20svw;
+    height: 100svh;
+    /* background-color: aqua; */
+}
+
+.koalaPosition {
+    position: relative;
+    left: -8svw;
+    top: -10svh;
+    /* top: -50px;
+    left: -2px; */
+    /* width: svh;
+    height: 150svh; */
+    /* background-color: blueviolet; */
 }
 
 .name {

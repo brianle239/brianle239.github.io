@@ -40,7 +40,10 @@ class Page1 extends Component {
                 </div>
             </div>
             <div className="flex-item2 loadFade">
-                <Koala />
+              <div className="koalaPosition">
+                <Koala/>
+              </div>
+                
             </div>
             
             

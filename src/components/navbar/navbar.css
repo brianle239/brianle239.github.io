@@ -28,21 +28,11 @@
     font-size: 4.25svh;
 }
 
-.koalaLogo {
-    /* object-fit: none; */
-    /* display: block; */
-    /* border-radius: 10svh;
-    border-color: orange;
-    background-image: url("src/assets/koala_logo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover; */
-}
-
 .redirects {
     margin-left: auto;
     display: flex;
     align-items: center;
+    font-size: 2.75svh;
 }
 
 .redirects div {

@@ -45,7 +45,7 @@ class Page3 extends Component {
                     Software Engineer Intern
                   </div>
                   <div className="expDesc">
-                    Build upon a Data as a Service (Daas) project by 
+                    Build upon a Data as a Service (DaaS) project by 
                     parsing and organizing terrabytes of GNSS data into a MySQL database for fast retrival time
                     via a RESTful API. 
                   </div>
